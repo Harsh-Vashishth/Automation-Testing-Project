@@ -1,7 +1,9 @@
-11:50:30.136 [main] DEBUG stepDefinations.LoginStep - Price filter is selected
-11:50:33.261 [main] DEBUG stepDefinations.LoginStep - Drop down is selected ₹60 - ₹70
-11:50:39.289 [main] DEBUG stepDefinations.LoginStep - Between Started
-11:50:39.305 [main] DEBUG stepDefinations.LoginStep - Between ended 
-11:50:42.233 [main] DEBUG stepDefinations.LoginStep - Code has reached given method
-11:50:47.791 [main] DEBUG stepDefinations.LoginStep - URL is launched
-11:50:52.941 [main] DEBUG stepDefinations.LoginStep - checkbox got clicked
+15:10:53.643 [main] FATAL stepDefinations.LoginStep - Exception is when :no such element: Unable to locate element: {"method":"xpath","selector":"(//select)[1]"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35a3e2fd69cc2cc5c9f6ac664b2dd004, findElement {value=(//select)[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HARSH~1.VAS\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63425}, goog:processID: 13268, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63425/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35a3e2fd69cc2cc5c9f6ac664b2dd004

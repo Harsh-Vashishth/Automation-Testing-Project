@@ -15,9 +15,10 @@ public class ScenarioHook extends Base{
 	}
 	
 	@After
-	public void tearDown(Scenario scenario)
+	public void tearDown(Scenario scenario) throws InterruptedException
 	{
 		  if (!scenario.isFailed()) {
+			  	Thread.sleep(4000);
 	            byte[] screenshot =
 	                    ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 

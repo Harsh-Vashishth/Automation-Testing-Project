@@ -1,4 +1,7 @@
-11:50:55.986 [main] DEBUG stepDefinations.LoginStep - Price filter is selected
-11:50:59.116 [main] DEBUG stepDefinations.LoginStep - Drop down is selected Above ₹70
-11:51:05.163 [main] DEBUG stepDefinations.LoginStep - Above Started
-11:51:05.179 [main] DEBUG stepDefinations.LoginStep - Above ended 
+15:10:53.649 [main] FATAL stepDefinations.LoginStep - Exception is when2 :Cannot invoke "org.openqa.selenium.support.ui.Select.selectByVisibleText(String)" because "this.select" is null
+15:11:03.788 [main] FATAL stepDefinations.LoginStep - Exception in :Expected condition failed: waiting for visibility of all [] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HARSH~1.VAS\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63425}, goog:processID: 13268, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63425/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35a3e2fd69cc2cc5c9f6ac664b2dd004

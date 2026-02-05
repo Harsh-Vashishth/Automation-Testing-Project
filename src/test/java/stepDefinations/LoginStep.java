@@ -1,5 +1,6 @@
 package stepDefinations;
 
+import java.time.Duration;
 import java.util.*;
 
 import org.apache.logging.log4j.LogManager;
@@ -19,6 +20,7 @@ public class LoginStep extends Base{
 	String rangeValue;
 	PriceFilterPage priceFilterPage;
 	private static final Logger logger = LogManager.getLogger(LoginStep.class);
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	@Given("user is on the search screen")
 	public void user_is_on_the_search_screen() {
 		try {
@@ -26,9 +28,9 @@ public class LoginStep extends Base{
 			driver.get(this.getUrl());
 			logger.debug("URL is launched");
 			driver.manage().window().maximize();
-			Thread.sleep(5000);
+//			Thread.sleep(5000);
 			this.priceFilterPage = new PriceFilterPage(driver);
-			this.priceFilterPage.getCheckBox().click();
+			wait.until(ExpectedConditions.elementToBeClickable(this.priceFilterPage.getCheckBox())).click();
 			logger.debug("checkbox got clicked");
 		}
 		catch(Exception ex) {
@@ -39,11 +41,11 @@ public class LoginStep extends Base{
 	public void dropdown_filter_by_price_is_clicked() {
 	    try {
 	    	
-	    	Thread.sleep(3000);
-	    	
+//	    	Thread.sleep(3000);
+	    	wait.until(ExpectedConditions.elementToBeSelected(this.priceFilterPage.getPriceSelect()));
 	    	select = new Select(this.priceFilterPage.getPriceSelect());
 			logger.debug("Price filter is selected");
-	    	Thread.sleep(3000);
+//	    	Thread.sleep(3000);
 	    	
 	    }
 		catch(Exception ex) {
@@ -59,8 +61,8 @@ public class LoginStep extends Base{
 			rangeValue = range;
 			select.selectByVisibleText(rangeValue);
 			logger.debug("Drop down is selected " + range );
-
-			Thread.sleep(3000);
+			
+//			Thread.sleep(3000);
 		}
 	    
 	    catch(Exception ex) {
@@ -73,9 +75,11 @@ public class LoginStep extends Base{
 	public void price_is_validated() {
 		try {
 			
-			Thread.sleep(3000);
+//			Thread.sleep(3000);
 			OptionalInt result = OptionalInt.empty();;
+			wait.until(ExpectedConditions.visibilityOfAllElements(this.priceFilterPage.getPriceList()));
 			List<WebElement> priceList = this.priceFilterPage.getPriceList();
+
 			if(rangeValue.contains("Below")) {
 				
 				logger.debug("Below started ");
