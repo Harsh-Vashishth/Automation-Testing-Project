@@ -1,4 +1,4 @@
-pjkmnackage hooks;
+package hooks;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
