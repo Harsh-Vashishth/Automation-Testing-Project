@@ -1,0 +1,7 @@
+11:50:30.136 [main] DEBUG stepDefinations.LoginStep - Price filter is selected
+11:50:33.261 [main] DEBUG stepDefinations.LoginStep - Drop down is selected ₹60 - ₹70
+11:50:39.289 [main] DEBUG stepDefinations.LoginStep - Between Started
+11:50:39.305 [main] DEBUG stepDefinations.LoginStep - Between ended 
+11:50:42.233 [main] DEBUG stepDefinations.LoginStep - Code has reached given method
+11:50:47.791 [main] DEBUG stepDefinations.LoginStep - URL is launched
+11:50:52.941 [main] DEBUG stepDefinations.LoginStep - checkbox got clicked
